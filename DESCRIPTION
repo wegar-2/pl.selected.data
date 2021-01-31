@@ -1,0 +1,29 @@
+Package: pl.selected.data
+Type: Package
+Title: This package contains selected data on Polish economy
+Version: 0.0.1
+Author: Artur Wegrzyn
+Maintainer: Artur Wegrzyn <awegrzyn17@gmail.com>
+Description: This package contains various data on Polish economy.
+    Selected monthly and quarterly time series have been picked using the 
+    following data sources: Narodowy Bank Polski (National Bank of Poland: https://www.nbp.pl/) 
+    and Główny Urząd Statystyczny (Central Statistical Office: https://stat.gov.pl/).
+    Please note that the data scope is by no means fully exhaustive (not all the data 
+    published by GUS and NBP are contained in the package datasets).
+    Last but not least, it is acknowledged that I am not the owner of the data contained
+    in the package.
+    Note that the scripts inside the package were used to create the data.tables 
+    from the source CSV files.
+    The CSV files ("R" folder) were manually compiled by the author.
+License: MIT License
+Encoding: UTF-8
+LazyData: true
+Imports:
+    dplyr,
+    data.table,
+    lubridate,
+    magrittr,
+    zoo
+Depends: 
+    R (>= 2.10)
+RoxygenNote: 7.1.0
